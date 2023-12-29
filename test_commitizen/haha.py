@@ -1,1 +1,2 @@
-haha = 0
+haha = 1
+hihi = 2
