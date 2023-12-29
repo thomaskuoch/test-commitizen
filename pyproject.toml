@@ -9,8 +9,7 @@ packages = [{ include = "test_commitizen" }]
 [tool.poetry.dependencies]
 python = "^3.9"
 pre-commit = "^3.6.0"
-
-
+pytest = "^7.4.3"
 
 [tool.commitizen]
 name = "cz_conventional_commits"
@@ -19,6 +18,7 @@ version_scheme = "semver"
 version_provider = "poetry"
 update_changelog_on_bump = true
 major_version_zero = true
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
