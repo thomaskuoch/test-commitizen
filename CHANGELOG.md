@@ -1,3 +1,15 @@
+## 1.0.0 (2023-12-29)
+
+### BREAKING CHANGE
+
+- real breaking change lol
+- A new value has been added in prout module which causes a breaking change
+
+### Feat
+
+- **caca**: add a real breaking change
+- **caca**: add breaking change value
+
 ## 0.5.0 (2023-12-29)
 
 ### Feat
