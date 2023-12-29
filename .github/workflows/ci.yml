@@ -1,0 +1,20 @@
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+      - name: Install black, flake8 and isort
+        run: python -m pip install black flake8 isort
+      - name: Run linting
+        run: |
+          flake8 --max-line-length=100 --per-file-ignores="__init__.py:F401" --ignore="E203,E402,E501,W503,F821,C901,E266"
+          black . --line-length=80 --check
+          isort .
