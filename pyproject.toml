@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "test-commitizen"
-version = "0.4.0"
+version = "0.4.1"
 description = ""
 authors = ["Thomas Kuoch <kuoch.thomas@gmail.com>"]
 readme = "README.md"
